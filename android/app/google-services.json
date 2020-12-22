@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458958174559",
+    "project_id": "cloud-app-91d08",
+    "storage_bucket": "cloud-app-91d08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458958174559:android:4918b128b5fde948819eea",
+        "android_client_info": {
+          "package_name": "nicolas.cloud_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458958174559-md234nq52h2q63bot4r285lnntcvukiu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nicolas.cloud_app",
+            "certificate_hash": "585b17e550733f45ccde1f4122c707e110618af5"
+          }
+        },
+        {
+          "client_id": "458958174559-a6lerreg72qrmg1icmscukcp008d4gh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0129GTP2fHfGJbwG_LLAFE1xmnHtZRoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458958174559-a6lerreg72qrmg1icmscukcp008d4gh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
