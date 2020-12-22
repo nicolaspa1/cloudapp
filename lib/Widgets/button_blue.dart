@@ -54,7 +54,7 @@ class _ButtonBlue extends State<ButtonBlue>{
 
           ),
         ),
-    ),
+      ),
     );
   }
 

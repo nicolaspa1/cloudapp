@@ -85,6 +85,9 @@ flutter:
 
   assets:
     - assets/img/logo.png
+    - assets/img/nicolas.jpg
+    - assets/img/ejercicio1.jpg
+    - assets/img/ejercicio2.jpg
 
   fonts:
     - family: Lato

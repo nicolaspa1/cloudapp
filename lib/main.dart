@@ -4,9 +4,9 @@ import 'package:cloud_app/User/bloc/bloc_user.dart';
 import 'package:cloud_app/User/ui/screens/sign_in_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 

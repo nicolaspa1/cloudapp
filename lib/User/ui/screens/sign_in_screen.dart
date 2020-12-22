@@ -49,7 +49,7 @@ class _SignInScreen extends State<SignInScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image(image: AssetImage('assets/img/logo.png')),
-                Text("Bienvenido a Bicho App xd ",
+                Text("",
                   style: TextStyle(
                     fontSize: 37.0,
                     fontFamily: "Lato",
@@ -58,15 +58,10 @@ class _SignInScreen extends State<SignInScreen> {
                   ),
 
                 ),
-                SignInButtonBuilder(
-                  text: 'Sign in with Email',
-                  icon: Icons.email,
-                  onPressed: () {},
-                  backgroundColor: Colors.blueGrey[700],
-                ),
-
-                ButtonBlue(text: "Entrar con Gmail",
+                ButtonBlue(
+                  text: "Entrar con Gmail",
                     onPressed: (){
+                    userBloc.signOut();
                     userBloc.signIn().then((auth.User a )=> print("El Usuario es ${a.displayName}"));
                 },
                 width: 300.0,
