@@ -30,7 +30,7 @@ class ProfileExerciseInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                this.exercise.where,
+                this.exercise.name,
                 style: TextStyle(
                     color: Color.fromRGBO(0, 0, 0, 0.4),
                     fontFamily: 'Lato',
@@ -39,7 +39,7 @@ class ProfileExerciseInfo extends StatelessWidget {
                 ),
               ),
               Text(
-                this.exercise.type,
+                this.exercise.description,
                 style: TextStyle(
                     color: Color.fromRGBO(0, 0, 0, 0.4),
                     fontFamily: 'Lato',
@@ -51,8 +51,8 @@ class ProfileExerciseInfo extends StatelessWidget {
         )
     );
 
-    final steps = Text(
-      'Steps ${this.exercise.steps}',
+    final recomendaciones = Text(
+      'Recomendaciones ${this.exercise.likes}',
       style: TextStyle(
           fontFamily: 'Lato',
           fontSize: 14.0,
@@ -81,7 +81,7 @@ class ProfileExerciseInfo extends StatelessWidget {
             children: <Widget>[
               place,
               placeInfo,
-              steps
+              recomendaciones
             ],
           )
       ),

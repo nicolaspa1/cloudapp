@@ -6,10 +6,9 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class ProfileExercise extends StatelessWidget {
 
-  String image;
   Exercise exercise;
 
-  ProfileExercise(this.image, this.exercise);
+  ProfileExercise(this.exercise);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class ProfileExercise extends StatelessWidget {
       decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage(image)
+              image: NetworkImage(exercise.urlImage)
           ),
           borderRadius: BorderRadius.all(Radius.circular(20.0)),
           color: Colors.red,

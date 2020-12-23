@@ -17,7 +17,7 @@ class ButtonsBar extends StatelessWidget {
         ),
         child: Row(
           children: <Widget>[
-            CircleButton(true, Icons.turned_in_not, 20.0, Color.fromRGBO(255, 255, 255, 1),()=>{}),
+            CircleButton(true, Icons.fitness_center, 20.0, Color.fromRGBO(255, 255, 255, 1),()=>{}),
             CircleButton(true, Icons.lock_open, 20.0, Color.fromRGBO(255, 255, 255, 1),()=>{}),
             CircleButton(false, Icons.add, 40.0, Color.fromRGBO(255, 255, 255, 1),()=>{}),
             CircleButton(true, Icons.exit_to_app, 20.0, Color.fromRGBO(255, 255, 255, 0.6),()=>{

@@ -111,7 +111,7 @@ class DescriptionExercise extends StatelessWidget {
       children: <Widget>[
         title_stars,
         description,
-        ButtonPurple("Navigate")
+        //ButtonPurple("Navigate")
       ],
     );
 

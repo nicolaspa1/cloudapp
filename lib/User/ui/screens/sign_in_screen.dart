@@ -1,4 +1,5 @@
 import 'package:cloud_app/User/bloc/bloc_user.dart';
+import 'package:cloud_app/User/model/user.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_app/Widgets/gradient_back.dart';
 import 'package:cloud_app/Widgets/button_blue.dart';
@@ -44,7 +45,7 @@ class _SignInScreen extends State<SignInScreen> {
       body: Stack(
           alignment: Alignment.center,
           children: <Widget>[
-            GradientBack("",null),
+            GradientBack(height: null),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -62,7 +63,14 @@ class _SignInScreen extends State<SignInScreen> {
                   text: "Entrar con Gmail",
                     onPressed: (){
                     userBloc.signOut();
-                    userBloc.signIn().then((auth.User a )=> print("El Usuario es ${a.displayName}"));
+                    userBloc.signIn().then((auth.User a ){
+                      userBloc.updateUserData(User(
+                        uId: a.uid,
+                        name: a.displayName,
+                        email: a.email,
+                        photoURL: a.photoURL
+                      ));
+                    });
                 },
                 width: 300.0,
                 height: 50.0,

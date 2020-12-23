@@ -5,7 +5,11 @@ import 'package:flutter/material.dart';
 
 
 class HomeExercise extends StatelessWidget {
-  String descriptionDummy = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+  String descriptionDummy = "BichoApp es una aplicación enfocada en promover el"
+      " estilo de vida saludable a través de rutinas de entrenamiento ideales según "
+      "tus caracteristicas físicas y las metas que desees lograr, este proyecto nace"
+      " con la intención de que cualquier persona pueda llevar un estilo de vida"
+      " saludable a base de ejercicio y buena alimentación.";
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -13,7 +17,7 @@ class HomeExercise extends StatelessWidget {
       children: <Widget>[
         ListView(
           children: <Widget>[
-            DescriptionExercise("Flexiones", 4, descriptionDummy),
+            DescriptionExercise("BichoApp", 4, descriptionDummy),
             ReviewList()
 
           ],

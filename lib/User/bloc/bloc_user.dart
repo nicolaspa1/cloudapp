@@ -1,3 +1,5 @@
+import 'package:cloud_app/User/model/user.dart';
+import 'package:cloud_app/User/repository/cloud_firestore_repository.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:cloud_app/User/repository/auth_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
@@ -12,6 +14,9 @@ class UserBloc implements Bloc{
   Future<auth.User> signIn(){
     return _authRepository.signInFirebase();
   }
+
+  final _cloudFirestoreRepository = CloudFirestoreRepository();
+  void updateUserData(User  user) => _cloudFirestoreRepository.updateUserDataFirestore(user);
 
   signOut(){
     _authRepository.signOut();
